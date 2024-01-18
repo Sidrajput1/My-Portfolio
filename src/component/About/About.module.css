@@ -1,0 +1,112 @@
+.container {
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    padding: 75px;
+    margin-top: 115px;
+    z-index: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.heading {
+    color: var(--color-font);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.me {
+    position: relative;
+    border-radius: 50%;
+    top: 120px;
+    left: 20px;
+    width: 300px;
+}
+
+.aboutme {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: -170px;
+    /* border: 1px solid white; */
+}
+
+.aboutme div {
+    border: 1px solid #bebdac;
+    height: 200px;
+    width: 180px;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 60px;
+
+}
+.aboutme div:hover{
+    background: var(--color-bg);
+    border: none;  
+}
+
+/*
+after that I have to give border color,change bg,hover effect, and some animation on to the card.
+then write a paragraph about me.
+
+*/
+.para{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    letter-spacing: 1px;
+    align-content: center;  
+    justify-content: center;
+    margin-left: 520px;
+    /* margin-top: -100px; */
+    height: 200px;
+    width: 50%;
+    
+    padding: 0 auto;
+    
+}
+
+@media screen and (max-width:830px){
+    .container {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .content {
+        flex-direction: column;
+      }
+      .me{
+        display: none;
+      }
+      .aboutme{
+        margin-top: 29px;
+        flex-wrap: wrap;
+      }
+      .para{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 50px;
+        margin-top: 100px;
+        flex-wrap: wrap;
+        overflow: scroll;
+        cursor: pointer;
+      }
+    
+}

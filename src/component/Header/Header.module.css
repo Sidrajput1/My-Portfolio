@@ -1,0 +1,152 @@
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-font);
+    z-index: 1;
+    margin-top: 4.5rem;
+}
+
+.title{
+    font-size: 72px;
+    font-weight: 1200;
+    margin-bottom: 33px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(
+        90deg,
+        rgba(42, 14, 166, 0.944) 70%,
+        rgba(255, 255, 255, 0) 120%
+      );
+    -webkit-text-fill-color: transparent;
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    color: transparent;  
+
+}
+
+.description{
+    font-size: 1.4rem;
+    margin-bottom: 52px;
+    animation: floatAnimation 3s ease-in-out infinite;
+    animation: colorchange 2s linear infinite;
+    font-weight: 600;
+
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes colorchange{
+    0% {
+        color: initial; /* Starting color */
+      }
+      50% {
+        color: rgb(255, 200, 0); /* Midway color */
+      }
+      100% {
+        color: #000; /* Ending color */
+      }
+}  
+  
+
+/* @keyframes slide {
+    0%{
+        text-transform: rotate(180deg);
+    }
+    100%{
+        text-transform: rotate(100deg);
+    }
+} */
+.contactme{
+    text-decoration: none;
+    background-color: var(--color--primarly);
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 17px 26px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    margin-left: 80px;
+}
+.contactme:hover{
+  background-color: #ffd700;
+  
+  outline: none;
+}
+
+.profile{
+    width: 32%;   
+    z-index: 1;
+    animation: floating 5s linear infinite;
+    border-radius: 50%;
+
+}
+
+@keyframes floating{
+    0% {
+        transform: translate(0, 0px);
+      }
+      50% {
+        transform: translate(0, 10px);
+      }
+      100% {
+        transform: translate(0, -0px);
+      }
+    }
+
+ .topblur{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-width: 250px;
+    top: -128px;
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(25, 109, 95, 0.378);
+    filter: blur(100px);
+    z-index: 0;
+ }  
+ 
+ .bottomblur{
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 300px;
+    min-width: 250px;
+    top: 246px;
+    right: -25vw;
+    border-radius: 764px;
+    background: rgba(25, 109, 81, 0.7);
+    filter: blur(150px);
+    z-index: 0;
+    
+ }
+
+ @media screen and (max-width:830px){
+    .container{
+      flex-direction: column-reverse;
+    }
+    .header{
+      align-items: center;
+    }
+
+ }
+    

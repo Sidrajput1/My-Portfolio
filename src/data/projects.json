@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Hospital landing Page",
+        "image":"project/hospital.png",
+        "description":"This website is created using html and advance css",
+        "tecnologies": "HTML | CSS",
+        "demo":"#",
+        "source":"https://www.github.com"
+    },
+    {
+        "title":"A Music App",
+        "image":"project/music.png",
+        "description":"This is a beautiful and responsive music web app",
+        "tecnologies": "HTML | CSS | JS",
+        "demo":"#",
+        "source":"https://www.github.com"
+    },
+    {
+        "title":"Currency converter",
+        "image":"project/currency.png",
+        "description":"This is currency converter App",
+        "tecnologies": "HTML | tailwind Css | Reactjs",
+        "demo":"#",
+        "source":"https://www.github.com"
+    },
+    {
+        "title":"Portfolio",
+        "image":"project/portfolio.jpeg",
+        "description":"This Website",
+        "tecnologies":"HTML | CSS | Reactjs",
+        "demo":"#",
+        "source":"https://www.github.com"
+    },
+    {
+        "title":"Youtube Backend",
+        "image":"project/backend.jpeg",
+        "description":"This is a Backend of youtube",
+        "tecnologies":"Nodejs | Express | Mongodb",
+        "demo":"#",
+        "source":"https://www.github.com"
+    }
+]
